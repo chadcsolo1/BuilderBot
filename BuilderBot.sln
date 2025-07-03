@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderBot", "BuilderBot.csproj", "{81E79CB8-79F0-40BC-8536-60BA6DE20679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81E79CB8-79F0-40BC-8536-60BA6DE20679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E79CB8-79F0-40BC-8536-60BA6DE20679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E79CB8-79F0-40BC-8536-60BA6DE20679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E79CB8-79F0-40BC-8536-60BA6DE20679}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FE27C2B-CAED-423F-986A-EB49030CF1D1}
+	EndGlobalSection
+EndGlobal
