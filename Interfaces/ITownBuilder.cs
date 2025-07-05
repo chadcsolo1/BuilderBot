@@ -8,10 +8,15 @@ namespace BuilderBot.Interfaces
 {
     public interface ITownBuilder
     {
-        void Buildheader();
-        void BuildBody();
-        void BuildFooter();
+        void BuildName();
+        void BuildDescription();
+        void BuildBiggestAttraction();
+        void BuildImageUrl();
+        void BuildPopulation();
+        void BuildAverageIncome();
+        void BuildDateCreated();
+        void BuildupdateDate();
 
-        TownReport GetReport();
+        TownReport GetTown();
     }
 }
