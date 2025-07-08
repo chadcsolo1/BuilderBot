@@ -8,20 +8,21 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using RandomNumberGenerator = BuilderBot.Services.RandomNumberGenerator;
+using System.Data;
 
 namespace BuilderBot.Infrastructure
 {
     public class TownBuilder : ITownBuilder
     {
         private Town _townBuild;
-        private readonly  IEnumerable<Town> _towns;
+        //private readonly  IEnumerable<Town> _towns;
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
         RandomDescriptionGenerator randomDescriptionGenerator = new RandomDescriptionGenerator();
 
-        public TownBuilder(IEnumerable<Town> towns)
+        public TownBuilder()
         {
             _townBuild = new Town();
-            _towns = towns;
+            //_towns = towns;
         }
 
         public void BuildAverageIncome()
@@ -69,9 +70,16 @@ namespace BuilderBot.Infrastructure
             throw new NotImplementedException();
         }
 
-        public TownReport GetTown()
+        public Town GetTown()
         {
-            throw new NotImplementedException();
+            var town = _townBuild;
+
+            Clear();
+
+            return town;
         }
+
+        private void Clear() => _townBuild = new Town();
+
     }
 }
